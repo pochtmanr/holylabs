@@ -1,23 +1,32 @@
+"use client";
+import { useEffect } from 'react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { useLocale, useTranslations } from 'next-intl';
 import Footer from '@/components/Footer';
 import styles from '../services.module.css';
 
-export default async function AppsServicePage({
-    params
-}: {
-    params: Promise<{ locale: string }>
-}) {
-    const { locale } = await params;
-    setRequestLocale(locale);
-
-    return <AppsContent locale={locale} />;
-}
-
-function AppsContent({ locale }: { locale: string }) {
+export default function AppsServicePage() {
+    const locale = useLocale();
     const t = useTranslations('services');
     const tApps = useTranslations('services.apps');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'ViewContent', {
+                content_name: 'Apps Service',
+                language: locale
+            });
+        }
+    }, [locale]);
+
+    const handleCtaClick = () => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('trackCustom', 'ServiceCta', {
+                service: 'Apps',
+                language: locale
+            });
+        }
+    };
 
     const portfolioItems = [
         { key: 'simnetiq', website: 'https://www.simnetiq.store/', appStore: 'https://apps.apple.com/us/app/simnetiq-global-esim/id6755963262', googlePlay: 'https://play.google.com/store/apps/details?id=com.simnetiq.storeAndroid' },

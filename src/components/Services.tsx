@@ -1,5 +1,6 @@
-import React from 'react';
+"use client";
 import Link from 'next/link';
+import { useLocale } from 'next-intl';
 import styles from './Services.module.css';
 
 const services = [
@@ -30,6 +31,17 @@ const services = [
 ];
 
 export default function Services() {
+    const locale = useLocale();
+
+    const handleServiceClick = (serviceTitle: string) => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'ViewContent', {
+                content_name: serviceTitle,
+                language: locale
+            });
+        }
+    };
+
     return (
         <section className={styles.servicesSection} id="services">
             <div className="container">
@@ -43,7 +55,12 @@ export default function Services() {
                 </div>
                 <div className={styles.cardsWrapper}>
                     {services.map((service) => (
-                        <Link key={service.id} href={service.href} className={styles.card}>
+                        <Link
+                            key={service.id}
+                            href={service.href}
+                            className={styles.card}
+                            onClick={() => handleServiceClick(service.title)}
+                        >
                             <img src={service.image} alt={service.title} className={styles.cardImage} />
                             <div className={styles.cardContent}>
                                 <span className={styles.number}>{service.id}.</span>

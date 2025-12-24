@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import styles from './Contact.module.css';
 
 const Antigravity = dynamic(() => import('./Antigravity'), { ssr: false });
@@ -39,6 +39,7 @@ const contactLinks = [
 
 export default function Contact() {
     const t = useTranslations('contact');
+    const locale = useLocale();
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -49,6 +50,16 @@ export default function Contact() {
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
+
+    const handleContactClick = (contactType: string) => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            const eventName = contactType === 'whatsapp' ? 'WABAContact' :
+                              contactType === 'telegram' ? 'TelegramContact' :
+                              contactType === 'email' ? 'EmailContact' :
+                              contactType === 'linkedin' ? 'LinkedInContact' : 'Contact';
+            window.fbq('trackCustom', eventName, { language: locale });
+        }
+    };
 
     return (
         <section id="contact" className={styles.contactSection}>
@@ -83,6 +94,7 @@ export default function Contact() {
                             target={option.isExternal ? '_blank' : undefined}
                             rel={option.isExternal ? 'noopener noreferrer' : undefined}
                             className={styles.optionCard}
+                            onClick={() => handleContactClick(option.key)}
                         >
                             <div className={styles.iconWrap}>
                                 {contactIcons[option.key as keyof typeof contactIcons]}

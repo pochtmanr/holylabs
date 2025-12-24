@@ -119,7 +119,15 @@ export default function Hero() {
 
                     <div className={styles.heroDescWrap}>
                         <p className={styles.heroDesc}>{t('description')}</p>
-                        <Link href={`/${locale}#contact`} className={styles.ctaButton}>
+                        <Link
+                            href={`/${locale}#contact`}
+                            className={styles.ctaButton}
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && window.fbq) {
+                                    window.fbq('trackCustom', 'HeroCta', { language: locale });
+                                }
+                            }}
+                        >
                             {t('cta')}
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.ctaArrow}>
                                 <path d="M5 12h14M12 5l7 7-7 7" />
