@@ -1,33 +1,46 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111111;
+  --accent: #3b82f6; /* Blue accent */
+  --secondary: #f4f4f4;
+  --text-muted: #666666;
+  --border-color: #e5e5e5;
+  --font-manrope: "Manrope", sans-serif;
+  
+  /* Spacing */
+  --container-padding: 2rem;
+  --section-spacing: 120px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --secondary: #1a1a1a;
+    --text-muted: #888888;
+    --border-color: #333333;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -35,8 +48,86 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes for this specific design */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.sticky-wrapper {
+  position: relative;
+  height: 200vh; /* Arbitrary for sticky sections */
+}
+
+/* Typography Utilities */
+h1, .h1 {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h3, .h3 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 600;
+}
+
+.big-text {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 500;
+}
+
+.small-text {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.section-spacer {
+  padding-bottom: var(--section-spacing);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .rtl\:rotate-\[135deg\] {
+  transform: rotate(135deg);
+}
+
+/* Logical properties for RTL support */
+.ps-4 { padding-inline-start: 1rem; }
+.pe-4 { padding-inline-end: 1rem; }
+.ms-4 { margin-inline-start: 1rem; }
+.me-4 { margin-inline-end: 1rem; }
+
+/* RTL-aware positioning */
+[dir="rtl"] .end-4 { left: 1rem; right: auto; }
+[dir="rtl"] .end-6 { left: 1.5rem; right: auto; }
+[dir="ltr"] .end-4 { right: 1rem; left: auto; }
+[dir="ltr"] .end-6 { right: 1.5rem; left: auto; }
+
+/* RTL arrow flip */
+[dir="rtl"] .arrow,
+[dir="rtl"] .ctaArrow {
+  transform: scaleX(-1);
 }

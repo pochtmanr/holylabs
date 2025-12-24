@@ -1,0 +1,369 @@
+.aboutSection {
+    position: relative;
+    width: 100%;
+    /* Create scroll tracks */
+    height: 200vh;
+    /* Allow enough space for the sticky scroll effect */
+    background-color: var(--background);
+    z-index: 10;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+}
+
+.aboutInnerSticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.aboutWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutInnerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aboutLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* Handle mobile gracefully */
+}
+
+.bigTextWrap {
+    overflow: hidden;
+}
+
+.bigText {
+    font-size: clamp(3rem, 7vw, 7rem);
+    line-height: 1.1;
+    font-weight: 400;
+    /* As per design feel, maybe thinner/thicker based on fonts */
+    letter-spacing: -0.03em;
+    color: var(--foreground);
+    text-transform: uppercase;
+    /* Often these designs are uppercase */
+}
+
+.aboutImageResize {
+    height: 8vw;
+    /* Proportional height */
+    overflow: hidden;
+    background: #ccc;
+    border-radius: 999px;
+    /* Pill shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.1s linear;
+    /* Smooth scroll update */
+    min-width: 0px;
+}
+
+.aboutImageWrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.aboutImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lottieWrap {
+    width: 8vw;
+    height: 8vw;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowIcon {
+    width: 50%;
+    height: 50%;
+    transform: rotate(45deg);
+}
+
+.heroButtonWrap {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.buttonSlide {
+    padding: 1rem 2.5rem;
+    background: var(--foreground);
+    color: var(--background);
+    border-radius: 999px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.buttonSlide:hover {
+    background: var(--accent);
+    color: var(--foreground);
+    transform: scale(1.05);
+}
+
+.lineLink {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid currentColor;
+}
+
+/* Second background overlay */
+.aboutSecondBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background);
+    /* Or different color for transition */
+    pointer-events: none;
+    z-index: 5;
+    transition: opacity 0.5s ease;
+}
+
+/* Service/Project Cards */
+.projectCardBlock {
+    /* This section starts AFTER the sticky section implies we need it to exist in the flow */
+    /* Since .aboutSection is 300vh, we might Position this absolutely at the bottom or just let it be at the end of flow */
+    /* Wait, usually in these layouts, the sticky wrapper is INSIDE the tall section. */
+    /* So content following the sticky wrapper needs to be positioned or flow naturally? */
+    /* If aboutInnerSticky is sticky, it stays until the parent .aboutSection is scrolled past. */
+    /* But the user wants project cards to likely reveal or scroll up. */
+    position: relative;
+    z-index: 20;
+    /* Above sticky */
+    /* margin-top removed to prevent early overlap */
+    background-color: var(--background);
+    /* Ensure opaque cover */
+    padding-top: 5rem;
+    /* transition space */
+    padding-bottom: 5rem;
+}
+
+.projectCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 grid */
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projectCard {
+    background: var(--secondary);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectCardContent {
+    position: relative;
+    z-index: 2;
+}
+
+.projectCard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+    z-index: 1;
+}
+
+.projectCardContent {
+    position: relative;
+    z-index: 2;
+}
+
+.projectCardTitle {
+    margin-bottom: 0.75rem;
+}
+
+.smallText {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cardTitleRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mediumBigText {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cardArrowBtn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 3;
+}
+
+.cardArrowBtn svg {
+    width: 50%;
+    height: 50%;
+    color: #fff;
+    transform: rotate(-45deg);
+}
+
+.projectCard:hover .cardArrowBtn {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.projectCard:hover .cardArrowBtn svg {
+    color: var(--accent);
+}
+
+.cardDescription {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .aboutSection {
+        height: auto;
+    }
+
+    .aboutInnerSticky {
+        position: relative;
+        height: 100vh;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .bigText {
+        font-size: 2rem;
+    }
+
+    .aboutLine {
+        gap: 0.5rem;
+    }
+
+    .aboutImageResize {
+        height: 2.5rem;
+    }
+
+    .lottieWrap {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .buttonSlide {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .heroButtonWrap {
+        margin: 0 0.5rem;
+    }
+
+    .lineLink {
+        display: none;
+    }
+
+    .projectCardBlock {
+        position: relative;
+        z-index: 1;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .projectCardWrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .projectCard {
+        min-height: 350px;
+        border-radius: 1rem;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .cardArrowBtn {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .mediumBigText {
+        font-size: 1.5rem;
+    }
+
+    .cardDescription {
+        font-size: 0.85rem;
+        max-width: 65%;
+    }
+}

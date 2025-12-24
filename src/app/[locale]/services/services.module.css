@@ -1,0 +1,322 @@
+.servicePage {
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+
+.heroSection {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.heroSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+    z-index: 1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.heroNumber {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.heroTitle {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.heroTagline {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.contentSection {
+    padding-bottom: 4rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.descriptionBlock {
+    padding-inline-end: 2rem;
+}
+
+.sectionLabel {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--foreground);
+    margin-bottom: 2rem;
+}
+
+.techStack {
+    margin-top: 3rem;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.techItem {
+    background: var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pricingBlock {
+    background: var(--secondary);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.pricingTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.pricingList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pricingItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.pricingName {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.pricingNote {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.pricingAmount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.pricingFrom {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.portfolioSection {
+    padding-bottom: 4rem;
+}
+
+.portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.portfolioItem {
+    background: var(--secondary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolioItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.portfolioDesc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.portfolioLinks {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.portfolioLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.portfolioLink:hover {
+    opacity: 0.7;
+}
+
+.credentialBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.automationList {
+    margin-top: 1.5rem;
+}
+
+.automationItem {
+    background: var(--secondary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.automationTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.automationIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--accent);
+}
+
+.automationDesc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.ctaSection {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.ctaButton {
+    display: inline-block;
+    background: var(--foreground);
+    color: var(--background);
+    padding: 1.25rem 3rem;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: var(--accent);
+    color: var(--foreground);
+    transform: scale(1.05);
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+    .pageContainer {
+        padding: 0 1rem;
+    }
+
+    .heroSection {
+        margin-bottom: 3rem;
+        height: 50vh;
+    }
+
+    .contentSection {
+        padding-bottom: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .descriptionBlock {
+        padding-inline-end: 0;
+    }
+
+    .pricingBlock {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,120 @@
+.container {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.trigger:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.flagSvg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.globeIcon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.9;
+}
+
+.locale {
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.chevron {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s ease;
+    opacity: 0.7;
+}
+
+.chevronOpen {
+    transform: rotate(180deg);
+}
+
+/* Dropdown - rendered via portal, outside navbar blend mode */
+.dropdown {
+    position: fixed;
+    min-width: 150px;
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 6px;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.15s ease;
+    z-index: 9999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 14px;
+    text-align: start;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.optionActive {
+    background: rgba(59, 130, 246, 0.25);
+    color: #60a5fa;
+}
+
+.localeName {
+    flex: 1;
+}

@@ -1,0 +1,174 @@
+.testimonialSection {
+    --glow-x: 50%;
+    --glow-y: 50%;
+    --glow-intensity: 0;
+    --glow-radius: 200px;
+    --glow-color: 59, 130, 246;
+    --border-color: #333;
+
+    background-color: #000;
+    color: #fff;
+    padding: var(--section-spacing) 0;
+    padding-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.leftCol {
+    flex: 1;
+    min-width: 300px;
+}
+
+.stickyWrapper {
+    position: sticky;
+    top: 100px;
+}
+
+.rightCol {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card {
+    --glow-x: 50%;
+    --glow-y: 50%;
+    --glow-intensity: 0;
+    --glow-radius: 200px;
+
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: radial-gradient(
+        var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+        rgba(59, 130, 246, calc(var(--glow-intensity) * 0.6)) 0%,
+        rgba(59, 130, 246, calc(var(--glow-intensity) * 0.3)) 30%,
+        transparent 60%
+    );
+    border-radius: inherit;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card:hover {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.role {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    color: var(--accent);
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #ccc;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonialSection {
+        padding: 4rem 0;
+        padding-top: 0;
+    }
+
+    .layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .leftCol {
+        min-width: 100%;
+    }
+
+    .stickyWrapper {
+        position: relative;
+        top: 0;
+    }
+
+    .rightCol {
+        min-width: 100%;
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+}

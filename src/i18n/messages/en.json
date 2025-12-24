@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "title": "HolyLabs | Creative Studio",
+    "description": "A creative studio specialized in crafting identities and design strategy."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "contact": "Contact",
+    "logo": "HolyLabs"
+  },
+  "hero": {
+    "code": "Code",
+    "that": "that",
+    "scales": "scales",
+    "description": "Development studio building apps, automations, and digital solutions.",
+    "cta": "Contact Us",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "we": "We",
+    "areADev": "are a dev",
+    "team": "team",
+    "building": "building",
+    "yourNext": "your next",
+    "product": "product",
+    "workWithUs": "Work with us",
+    "services": {
+      "apps": {
+        "title": "Apps",
+        "description": "iOS & Android apps built with React Native"
+      },
+      "web": {
+        "title": "Web",
+        "description": "Landing pages & web applications with Next.js"
+      },
+      "automations": {
+        "title": "Automations",
+        "description": "Workflow automation with n8n & Make"
+      },
+      "marketing": {
+        "title": "Ads & Marketing",
+        "description": "Campaign management & brand strategy"
+      }
+    }
+  },
+  "work": {
+    "discover": "Discover.",
+    "ourWork": "Our Work",
+    "categories": {
+      "esimPlatform": "eSIM Platform",
+      "deliverySystem": "Delivery System",
+      "householdManagement": "Household Management",
+      "esimAppApi": "eSIM App + API",
+      "iosChromeExtension": "iOS, Android & Chrome Extension"
+    }
+  },
+  "whyUs": {
+    "title": "Why client",
+    "titleLine2": "choose us",
+    "description": "We provide tailored solutions built on creativity, precision, and trust—ensuring quality results and a smooth experience every step of the way.",
+    "satisfaction": {
+      "value": "92%",
+      "label": "Client satisfaction rate, fostering long-term relationships and repeat business"
+    },
+    "users": {
+      "value": "30k+",
+      "label": "Active users experiencing our design every day via products we made"
+    }
+  },
+  "testimonials": {
+    "title": "What our",
+    "titleLine2": "clients say",
+    "items": [
+      {
+        "name": "Ron Ben",
+        "role": "Founder of CitFarm & SMRTCOM",
+        "text": "\"Working with HolyLabs was effortless. They understood our vision and delivered solutions that exceeded expectations across both of our companies.\""
+      },
+      {
+        "name": "Noam Carmeli",
+        "role": "Founder of GoDelivery",
+        "text": "\"They brought clarity to our ideas and turned them into something tangible. The process felt collaborative and smooth from start to finish.\""
+      },
+      {
+        "name": "Dan Antebi",
+        "role": "Founder of MediaGate",
+        "text": "\"Professional, detail-oriented, and genuinely invested in our success. We couldn't have asked for a better development partner.\""
+      }
+    ]
+  },
+  "contact": {
+    "getInTouch": "Get in Touch",
+    "letsChat": "Let's Talk",
+    "subtitle": "Ready to start your project? Reach out through any of these channels.",
+    "contactUs": "Contact us",
+    "languagesLabel": "Feel free to reach us in",
+    "languages": {
+      "english": "English",
+      "hebrew": "Hebrew",
+      "ukrainian": "Ukrainian",
+      "russian": "Russian"
+    },
+    "options": {
+      "whatsapp": {
+        "name": "WhatsApp",
+        "description": "Quick response, chat with us directly"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "description": "Chat with our bot for instant support"
+      },
+      "email": {
+        "name": "Email",
+        "description": "For detailed project inquiries"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "description": "Connect with us professionally"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Building digital products that matter.",
+    "connect": "Connect",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "cookiesPolicy": "Cookies Policy",
+    "copyright": "© {year} HolyLabs. All rights reserved."
+  },
+  "services": {
+    "backToServices": "← Back to Services",
+    "backToHome": "← Back to Home",
+    "whatWeDo": "What We Do",
+    "techStack": "Tech Stack",
+    "pricing": "Pricing",
+    "from": "from",
+    "custom": "Custom",
+    "startProject": "Start Your Project",
+    "apps": {
+      "number": "01.",
+      "title": "Apps",
+      "tagline": "Native and cross-platform mobile applications that deliver exceptional user experiences.",
+      "description1": "We build mobile applications that users love. From concept to App Store, we handle the entire development process. Our apps are built with performance, scalability, and user experience at the core.",
+      "description2": "Whether you need an iOS app, Android app, or a cross-platform solution that works on both, we have the expertise to deliver. We specialize in React Native for efficient cross-platform development without sacrificing native performance.",
+      "ourApps": "Our Apps",
+      "pricing": {
+        "mobileApp": {
+          "name": "Mobile App",
+          "note": "iOS & Android",
+          "price": "$2,000"
+        },
+        "mvpApp": {
+          "name": "MVP App",
+          "note": "Core features, fast launch",
+          "price": "$2,000"
+        },
+        "enterpriseApp": {
+          "name": "Enterprise App",
+          "note": "Complex features, integrations"
+        }
+      },
+      "portfolio": {
+        "simnetiq": {
+          "name": "Simnetiq",
+          "description": "Global eSIM application for travelers. Buy and activate eSIMs instantly for 190+ countries. Built with React Native for iOS and Android."
+        },
+        "goDelivery": {
+          "name": "Go Delivery",
+          "description": "Delivery service application for seamless order tracking and management. Built with React Native for iOS and Android."
+        },
+        "montiVpn": {
+          "name": "Monti VPN",
+          "description": "Secure VPN application for private and protected internet browsing. Built with React Native for iOS and Android."
+        },
+        "roamjet": {
+          "name": "RoamJet eSIM",
+          "description": "eSIM travel companion for instant mobile connectivity worldwide. Built with React Native for iOS and Android."
+        },
+        "vitrix": {
+          "name": "Vitrix",
+          "description": "Fitness and workout tracking application for achieving your health goals. Built with React Native for Android."
+        },
+        "branndi": {
+          "name": "Branndi",
+          "description": "Brand management and social media toolkit for creators and businesses. Built with React Native for iOS and Android."
+        },
+        "plugiq": {
+          "name": "PlugIQ",
+          "description": "Smart EV charging station finder and management application. Built with React Native for iOS."
+        }
+      },
+      "links": {
+        "website": "Website →",
+        "appStore": "App Store →",
+        "googlePlay": "Google Play →"
+      }
+    },
+    "web": {
+      "number": "02.",
+      "title": "Web",
+      "tagline": "Modern web applications and landing pages that convert visitors into customers.",
+      "description1": "We create stunning web experiences that drive results. From high-converting landing pages to complex web applications, we build solutions that look great and perform even better.",
+      "description2": "Using the latest technologies like Next.js, React, and Tailwind CSS, we deliver fast, SEO-friendly websites that scale with your business.",
+      "ourWork": "Our Work",
+      "pricing": {
+        "landingPage": {
+          "name": "Landing Page",
+          "note": "Single page, conversion focused",
+          "price": "$800"
+        },
+        "website": {
+          "name": "Website",
+          "note": "Multi-page, custom design",
+          "price": "$1,500"
+        },
+        "webApp": {
+          "name": "Web Application",
+          "note": "Full-stack, complex features"
+        }
+      }
+    },
+    "automations": {
+      "number": "03.",
+      "title": "Automations",
+      "tagline": "Streamline your workflows and eliminate repetitive tasks with intelligent automation.",
+      "description1": "We automate your business processes to save time and reduce errors. From simple task automation to complex multi-system integrations, we build workflows that work 24/7.",
+      "description2": "Using platforms like n8n and Make, we connect your tools and create seamless automations that scale with your business needs.",
+      "ourAutomations": "Our Automations",
+      "pricing": {
+        "simpleAutomation": {
+          "name": "Simple Automation",
+          "note": "Single workflow, basic triggers",
+          "price": "$300"
+        },
+        "complexAutomation": {
+          "name": "Complex Automation",
+          "note": "Multi-system, advanced logic",
+          "price": "$800"
+        },
+        "enterpriseAutomation": {
+          "name": "Enterprise Automation",
+          "note": "Custom solutions, full support"
+        }
+      }
+    },
+    "marketing": {
+      "number": "04.",
+      "title": "Ads & Marketing",
+      "tagline": "Strategic marketing campaigns that reach the right audience and drive real results.",
+      "description1": "We create and manage marketing campaigns that deliver measurable results. From social media ads to search engine marketing, we help you reach your target audience effectively.",
+      "description2": "Our data-driven approach ensures every dollar spent contributes to your growth goals.",
+      "ourCampaigns": "Our Campaigns",
+      "pricing": {
+        "campaignSetup": {
+          "name": "Campaign Setup",
+          "note": "Initial setup, targeting",
+          "price": "$500"
+        },
+        "monthlyManagement": {
+          "name": "Monthly Management",
+          "note": "Ongoing optimization",
+          "price": "$800"
+        },
+        "fullService": {
+          "name": "Full Service",
+          "note": "Strategy, creative, management"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "HolyLabs (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services."
+      },
+      "informationCollect": {
+        "title": "2. Information We Collect",
+        "intro": "We may collect information about you in various ways:",
+        "items": [
+          "Personal Data: Name, email address, phone number, and other contact information you provide when contacting us.",
+          "Usage Data: Information about how you use our website, including pages visited, time spent, and navigation patterns.",
+          "Device Data: Information about your device, browser type, IP address, and operating system."
+        ]
+      },
+      "howWeUse": {
+        "title": "3. How We Use Your Information",
+        "intro": "We use the information we collect to:",
+        "items": [
+          "Respond to your inquiries and provide customer support",
+          "Improve our website and services",
+          "Send you updates about our services (with your consent)",
+          "Analyze usage patterns to enhance user experience",
+          "Comply with legal obligations"
+        ]
+      },
+      "informationSharing": {
+        "title": "4. Information Sharing",
+        "intro": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:",
+        "items": [
+          "With service providers who assist us in operating our website",
+          "To comply with legal requirements or respond to lawful requests",
+          "To protect our rights, privacy, safety, or property"
+        ]
+      },
+      "dataSecurity": {
+        "title": "5. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+      },
+      "yourRights": {
+        "title": "6. Your Rights",
+        "intro": "You have the right to:",
+        "items": [
+          "Access the personal information we hold about you",
+          "Request correction of inaccurate information",
+          "Request deletion of your personal information",
+          "Withdraw consent for data processing",
+          "Object to certain processing activities"
+        ]
+      },
+      "contactUs": {
+        "title": "7. Contact Us",
+        "intro": "If you have any questions about this Privacy Policy, please contact us at:",
+        "email": "Email:"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookies Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. What Are Cookies",
+        "content": "Cookies are small text files that are stored on your device when you visit a website. They help websites remember your preferences and improve your browsing experience."
+      },
+      "howWeUse": {
+        "title": "2. How We Use Cookies",
+        "intro": "We use cookies to:",
+        "items": [
+          "Remember your preferences and settings",
+          "Analyze how our website is used",
+          "Improve our website performance",
+          "Provide personalized content"
+        ]
+      },
+      "typesOfCookies": {
+        "title": "3. Types of Cookies We Use",
+        "items": [
+          "Essential Cookies: Required for the website to function properly.",
+          "Analytics Cookies: Help us understand how visitors interact with our website.",
+          "Preference Cookies: Remember your settings and preferences."
+        ]
+      },
+      "managingCookies": {
+        "title": "4. Managing Cookies",
+        "content": "You can control and manage cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of our website."
+      },
+      "contactUs": {
+        "title": "5. Contact Us",
+        "intro": "If you have any questions about our use of cookies, please contact us at:",
+        "email": "Email:"
+      }
+    }
+  }
+}

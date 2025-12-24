@@ -1,0 +1,36 @@
+# Image Folder Structure
+
+Place your images in the appropriate folders:
+
+## /services
+- Service card images (Apps, Web, Automations, Marketing)
+- Recommended size: 800x600px or larger
+- Format: WebP or JPG
+
+## /work
+- Project/portfolio images
+- Recommended size: 1920x1080px (full-screen)
+- Format: WebP or JPG
+
+## /testimonials
+- Client avatars/photos
+- Recommended size: 200x200px (square)
+- Format: WebP, PNG, or JPG
+
+## /why-us
+- Images for "Why Us" section features
+- Recommended size: 600x400px
+- Format: WebP or JPG
+
+## /hero
+- Hero section background or decorative images
+- Recommended size: 1920x1080px or larger
+- Format: WebP or JPG
+
+## /about
+- About section images
+- Recommended size: varies
+- Format: WebP or JPG
+
+---
+Usage in code: `/images/services/app-image.webp`
