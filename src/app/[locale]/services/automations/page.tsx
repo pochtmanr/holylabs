@@ -1,23 +1,32 @@
+"use client";
+import { useEffect } from 'react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { useLocale, useTranslations } from 'next-intl';
 import Footer from '@/components/Footer';
 import styles from '../services.module.css';
 
-export default async function AutomationsServicePage({
-    params
-}: {
-    params: Promise<{ locale: string }>
-}) {
-    const { locale } = await params;
-    setRequestLocale(locale);
-
-    return <AutomationsContent locale={locale} />;
-}
-
-function AutomationsContent({ locale }: { locale: string }) {
+export default function AutomationsServicePage() {
+    const locale = useLocale();
     const t = useTranslations('services');
     const tAuto = useTranslations('services.automations');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'ViewContent', {
+                content_name: 'Automations Service',
+                language: locale
+            });
+        }
+    }, [locale]);
+
+    const handleCtaClick = () => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('trackCustom', 'ServiceCta', {
+                service: 'Automations',
+                language: locale
+            });
+        }
+    };
 
     return (
         <>
@@ -97,7 +106,11 @@ function AutomationsContent({ locale }: { locale: string }) {
                 </section>
 
                 <section className={styles.ctaSection}>
-                    <Link href={`/${locale}#contact`} className={styles.ctaButton}>
+                    <Link
+                        href={`/${locale}#contact`}
+                        className={styles.ctaButton}
+                        onClick={handleCtaClick}
+                    >
                         {t('startProject')}
                         <div className={styles.ctaArrowCircle}>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.ctaArrowIcon}>

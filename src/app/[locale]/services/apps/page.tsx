@@ -163,7 +163,11 @@ export default function AppsServicePage() {
                 </section>
 
                 <section className={styles.ctaSection}>
-                    <Link href={`/${locale}#contact`} className={styles.ctaButton}>
+                    <Link
+                        href={`/${locale}#contact`}
+                        className={styles.ctaButton}
+                        onClick={handleCtaClick}
+                    >
                         {t('startProject')}
                         <div className={styles.ctaArrowCircle}>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.ctaArrowIcon}>
