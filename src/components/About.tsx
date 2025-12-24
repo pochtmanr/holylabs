@@ -48,6 +48,13 @@ export default function About() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isMobile]);
 
+    const scrollToWork = () => {
+        const workSection = document.getElementById('work');
+        if (workSection) {
+            workSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const services = [
         { key: 'apps', image: '/images/services/apps.avif', href: `/${locale}/services/apps` },
         { key: 'web', image: '/images/services/web.avif', href: `/${locale}/services/web` },
@@ -120,6 +127,18 @@ export default function About() {
                                 <div className={styles.lineLinkText}>{t('workWithUs')}</div>
                             </Link>
                         </div>
+                    </div>
+
+                    {/* Scroll indicator */}
+                    <div
+                        className={styles.scrollIndicator}
+                        onClick={scrollToWork}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={(e) => e.key === 'Enter' && scrollToWork()}
+                    >
+                        <span className={styles.scrollText}>{t('seeOurWork')}</span>
+                        <div className={styles.scrollArrow}></div>
                     </div>
                 </div>
 
