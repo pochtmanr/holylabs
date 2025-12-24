@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api/', '/_next/'],
         },
-        sitemap: 'https://holylabs.io/sitemap.xml',
+        sitemap: 'https://holylabs.net/sitemap.xml',
     };
 }

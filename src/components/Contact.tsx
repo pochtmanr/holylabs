@@ -54,12 +54,12 @@ export default function Contact() {
         <section id="contact" className={styles.contactSection}>
             <div className={styles.canvasWrapper}>
                 <Antigravity
-                    count={isMobile ? 200 : 300}
-                    magnetRadius={isMobile ? 6 : 8}
+                    count={isMobile ? 100 : 200}
+                    magnetRadius={isMobile ? 4 : 6}
                     ringRadius={isMobile ? 7 : 9}
                     waveSpeed={0.3}
                     waveAmplitude={1.2}
-                    particleSize={isMobile ? 0.6 : 1.2}
+                    particleSize={isMobile ? 0.4 : 0.8}
                     lerpSpeed={0.04}
                     color="#3b82f6"
                     autoAnimate={true}

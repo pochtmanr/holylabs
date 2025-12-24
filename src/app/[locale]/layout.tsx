@@ -16,7 +16,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const baseUrl = 'https://holylabs.io';
+const baseUrl = 'https://holylabs.net';
 
 export async function generateMetadata({
   params
@@ -98,7 +98,14 @@ export default async function LocaleLayout({
     <html lang={locale} dir={direction}>
       <head>
         <script dangerouslySetInnerHTML={{
-          __html: `if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; } window.scrollTo(0, 0);`
+          __html: `
+            if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+            if (!window.location.hash) {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }
+          `
         }} />
         <link rel="alternate" hrefLang="en" href="/en" />
         <link rel="alternate" hrefLang="he" href="/he" />

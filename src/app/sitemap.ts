@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { locales } from '@/i18n/config';
 
-const baseUrl = 'https://holylabs.io';
+const baseUrl = 'https://holylabs.net';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const routes = [

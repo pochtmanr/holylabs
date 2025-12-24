@@ -261,10 +261,12 @@
 }
 
 .ctaButton {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
     background: var(--foreground);
     color: var(--background);
-    padding: 1.25rem 3rem;
+    padding: 1rem 1rem 1rem 2rem;
     border-radius: 999px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -274,9 +276,25 @@
 }
 
 .ctaButton:hover {
-    background: var(--accent);
-    color: var(--foreground);
     transform: scale(1.05);
+}
+
+.ctaArrowCircle {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ctaArrowIcon {
+    width: 50%;
+    height: 50%;
+    color: #fff;
+    transform: rotate(-45deg);
 }
 
 .backLink {
@@ -301,6 +319,17 @@
     .heroSection {
         margin-bottom: 3rem;
         height: 50vh;
+        min-height: 300px;
+        padding: 1.5rem;
+        align-items: flex-end;
+    }
+
+    .heroTitle {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .heroTagline {
+        font-size: 1rem;
     }
 
     .contentSection {
@@ -318,5 +347,15 @@
 
     .pricingBlock {
         padding: 1.5rem;
+    }
+
+    .ctaButton {
+        font-size: 0.95rem;
+        padding: 0.875rem 0.875rem 0.875rem 1.5rem;
+    }
+
+    .ctaArrowCircle {
+        width: 2rem;
+        height: 2rem;
     }
 }
