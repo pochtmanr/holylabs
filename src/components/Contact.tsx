@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import styles from './Contact.module.css';
@@ -38,18 +39,28 @@ const contactLinks = [
 
 export default function Contact() {
     const t = useTranslations('contact');
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     return (
         <section id="contact" className={styles.contactSection}>
             <div className={styles.canvasWrapper}>
                 <Antigravity
-                    count={300}
-                    magnetRadius={6}
-                    ringRadius={7}
-                    waveSpeed={0.4}
-                    waveAmplitude={1}
-                    particleSize={1.5}
-                    lerpSpeed={0.05}
+                    count={isMobile ? 200 : 300}
+                    magnetRadius={isMobile ? 6 : 8}
+                    ringRadius={isMobile ? 7 : 9}
+                    waveSpeed={0.3}
+                    waveAmplitude={1.2}
+                    particleSize={isMobile ? 0.6 : 1.2}
+                    lerpSpeed={0.04}
                     color="#3b82f6"
                     autoAnimate={true}
                     particleVariance={1}

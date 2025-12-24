@@ -48,10 +48,10 @@ export default function About() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isMobile]);
 
-    const scrollToWork = () => {
-        const workSection = document.getElementById('work');
-        if (workSection) {
-            workSection.scrollIntoView({ behavior: 'smooth' });
+    const scrollToServices = () => {
+        const servicesSection = document.getElementById('Service');
+        if (servicesSection) {
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -132,10 +132,10 @@ export default function About() {
                     {/* Scroll indicator */}
                     <div
                         className={styles.scrollIndicator}
-                        onClick={scrollToWork}
+                        onClick={scrollToServices}
                         role="button"
                         tabIndex={0}
-                        onKeyDown={(e) => e.key === 'Enter' && scrollToWork()}
+                        onKeyDown={(e) => e.key === 'Enter' && scrollToServices()}
                     >
                         <span className={styles.scrollText}>{t('seeOurWork')}</span>
                         <div className={styles.scrollArrow}></div>

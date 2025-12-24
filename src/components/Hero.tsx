@@ -59,23 +59,21 @@ export default function Hero() {
 
     return (
         <section id="hero" className={styles.hero}>
-            {/* Antigravity animation - disabled on mobile for performance */}
-            {!isMobile && (
-                <div className={styles.canvasWrapper}>
-                    <Antigravity
-                        count={400}
-                        magnetRadius={8}
-                        ringRadius={9}
-                        waveSpeed={0.3}
-                        waveAmplitude={1.2}
-                        particleSize={1.8}
-                        lerpSpeed={0.04}
-                        color="#3b82f6"
-                        autoAnimate={true}
-                        particleVariance={1}
-                    />
-                </div>
-            )}
+            {/* Antigravity animation - smaller particles on mobile */}
+            <div className={styles.canvasWrapper}>
+                <Antigravity
+                    count={isMobile ? 200 : 300}
+                    magnetRadius={isMobile ? 6 : 8}
+                    ringRadius={isMobile ? 7 : 9}
+                    waveSpeed={0.3}
+                    waveAmplitude={1.2}
+                    particleSize={isMobile ? 0.6 : 1.2}
+                    lerpSpeed={0.04}
+                    color="#3b82f6"
+                    autoAnimate={true}
+                    particleVariance={1}
+                />
+            </div>
             <div className={styles.mainContainer}>
                 <div className={styles.heroWrap}>
                     {/* Moving Title Wrapper */}
