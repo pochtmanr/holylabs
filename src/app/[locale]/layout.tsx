@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -7,9 +7,9 @@ import { locales, localeDirection, type Locale } from '@/i18n/config';
 import Navbar from "@/components/Navbar";
 import "../globals.css";
 
-const manrope = Manrope({
+const nunitoSans = Nunito_Sans({
   subsets: ["latin", "cyrillic"],
-  variable: "--font-manrope",
+  variable: "--font-nunito-sans",
 });
 
 export function generateStaticParams() {
@@ -132,7 +132,7 @@ export default async function LocaleLayout({
         <link rel="alternate" hrefLang="ru" href="/ru" />
         <link rel="alternate" hrefLang="x-default" href="/en" />
       </head>
-      <body className={`${manrope.variable} font-sans antialiased`}>
+      <body className={`${nunitoSans.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
