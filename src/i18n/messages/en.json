@@ -14,7 +14,7 @@
     "code": "Code",
     "that": "that",
     "scales": "scales",
-    "description": "Development studio building apps, automations, and digital solutions.",
+    "description": "We build apps, websites, and automations for startups and growing businesses.",
     "cta": "Contact Us",
     "scroll": "Scroll"
   },
@@ -30,19 +30,19 @@
     "services": {
       "apps": {
         "title": "Apps",
-        "description": "iOS & Android apps built with React Native"
+        "description": "iOS & Android. One codebase. Fast to market."
       },
       "web": {
         "title": "Web",
-        "description": "Landing pages & web applications with Next.js"
+        "description": "Sites that load fast and convert visitors into customers."
       },
       "automations": {
         "title": "Automations",
-        "description": "Workflow automation with n8n & Make"
+        "description": "Eliminate busywork. Save 10+ hours/week."
       },
       "marketing": {
         "title": "Ads & Marketing",
-        "description": "Campaign management & brand strategy"
+        "description": "Campaigns that generate leads, not just clicks."
       }
     }
   },
@@ -58,9 +58,22 @@
     }
   },
   "whyUs": {
-    "title": "Why client",
+    "title": "Why clients",
     "titleLine2": "choose us",
-    "description": "We provide tailored solutions built on creativity, precision, and trust—ensuring quality results and a smooth experience every step of the way.",
+    "pillars": {
+      "speed": {
+        "title": "Speed",
+        "description": "Most projects launch in 2–8 weeks."
+      },
+      "ownership": {
+        "title": "Ownership",
+        "description": "Your code. Your accounts. Always."
+      },
+      "clarity": {
+        "title": "Clarity",
+        "description": "Weekly updates. No surprises."
+      }
+    },
     "satisfaction": {
       "value": "92%",
       "label": "Client satisfaction rate, fostering long-term relationships and repeat business"
@@ -92,7 +105,7 @@
     ]
   },
   "contact": {
-    "getInTouch": "Get in Touch",
+    "getInTouch": "Ready to build?",
     "letsChat": "Let's Talk",
     "subtitle": "Ready to start your project? Reach out through any of these channels.",
     "contactUs": "Contact us",
@@ -141,132 +154,513 @@
     "startProject": "Start Your Project",
     "apps": {
       "number": "01.",
-      "title": "Apps",
-      "tagline": "Native and cross-platform mobile applications that deliver exceptional user experiences.",
-      "description1": "We build mobile applications that users love. From concept to App Store, we handle the entire development process. Our apps are built with performance, scalability, and user experience at the core.",
-      "description2": "Whether you need an iOS app, Android app, or a cross-platform solution that works on both, we have the expertise to deliver. We specialize in React Native for efficient cross-platform development without sacrificing native performance.",
+      "eyebrow": "FOR STARTUPS & GROWING BUSINESSES",
+      "title": "Your App. Both Platforms.",
+      "titleLine2": "8 Weeks.",
+      "tagline": "We build MVPs and production-ready mobile apps with React Native — one codebase for iOS and Android. No bloated timelines. No surprise costs.",
+      "proofLine": "20 + apps launched to App Store & Google Play — VPN, eSIM, fitness, delivery & more.",
+      "heroCta": "Get Your Free App Roadmap →",
+      "whyFounders": "Why Founders Choose Us",
+      "benefits": {
+        "oneCodebase": {
+          "title": "One codebase, both platforms",
+          "description": "React Native means you don't pay twice."
+        },
+        "transparentPricing": {
+          "title": "Transparent pricing",
+          "description": "MVPs from $2,000. No hidden costs."
+        },
+        "weeklyUpdates": {
+          "title": "Weekly updates",
+          "description": "You'll never wonder \"what's happening.\""
+        },
+        "postLaunch": {
+          "title": "Post-launch support",
+          "description": "We don't disappear after delivery."
+        }
+      },
+      "seeOurWork": "See Our Works ↓",
       "ourApps": "Our Apps",
+      "pricingTitle": "Simple Pricing. No Surprises.",
+      "pricingCta": "Let's talk",
+      "pricingNote": "Every project starts with a free 30-minute strategy call. No commitment.",
       "pricing": {
-        "mobileApp": {
-          "name": "Mobile App",
-          "note": "iOS & Android",
-          "price": "$2,000"
+        "mvpLaunch": {
+          "name": "MVP Launch",
+          "note": "Core features, 1 platform, 6-8 week delivery",
+          "price": "$1,500"
         },
-        "mvpApp": {
-          "name": "MVP App",
-          "note": "Core features, fast launch",
-          "price": "$2,000"
+        "fullProduct": {
+          "name": "Full Product",
+          "note": "iOS + Android, integrations, 10-12 weeks",
+          "price": "$3,000"
         },
-        "enterpriseApp": {
-          "name": "Enterprise App",
-          "note": "Complex features, integrations"
+        "enterprise": {
+          "name": "Enterprise",
+          "note": "Complex features, custom integrations, dedicated PM",
+          "price": "Custom"
         }
       },
       "portfolio": {
         "simnetiq": {
           "name": "Simnetiq",
-          "description": "Global eSIM application for travelers. Buy and activate eSIMs instantly for 190+ countries. Built with React Native for iOS and Android."
+          "description": "Global eSIM app. 190+ countries. Launched in 6 weeks. 4.8★ App Store rating."
         },
         "goDelivery": {
           "name": "Go Delivery",
-          "description": "Delivery service application for seamless order tracking and management. Built with React Native for iOS and Android."
+          "description": "Order tracking for delivery service. MVP launched in 2 weeks."
         },
         "montiVpn": {
           "name": "Monti VPN",
-          "description": "Secure VPN application for private and protected internet browsing. Built with React Native for iOS and Android."
+          "description": "Secure VPN app for private browsing. 30k+ downloads in first month."
         },
         "roamjet": {
           "name": "RoamJet eSIM",
-          "description": "eSIM travel companion for instant mobile connectivity worldwide. Built with React Native for iOS and Android."
+          "description": "eSIM travel companion. Instant connectivity worldwide. MVP launched in 5 weeks."
         },
         "vitrix": {
           "name": "Vitrix",
-          "description": "Fitness and workout tracking application for achieving your health goals. Built with React Native for Android."
+          "description": "Fitness tracking app. Custom workout plans. AI-powered recommendations."
         },
         "branndi": {
           "name": "Branndi",
-          "description": "Brand management and social media toolkit for creators and businesses. Built with React Native for iOS and Android."
+          "description": "Brand management toolkit for creators. Social media scheduling built-in. AI Driven content creation."
         },
         "plugiq": {
           "name": "PlugIQ",
-          "description": "Smart EV charging station finder and management application. Built with React Native for iOS."
+          "description": "Smart EV charging finder. Real-time availability. iOS launch in 2 weeks."
         }
       },
       "links": {
         "website": "Website →",
         "appStore": "App Store →",
         "googlePlay": "Google Play →"
+      },
+      "process": {
+        "title": "How It Works",
+        "step1": {
+          "name": "Strategy Call (Free)",
+          "description": "We learn your idea, budget, and timeline. You get an honest assessment."
+        },
+        "step2": {
+          "name": "Roadmap & Proposal",
+          "description": "We send a clear scope, fixed price, and delivery date within 48 hours."
+        },
+        "step3": {
+          "name": "Build Sprints",
+          "description": "Weekly demos. You see progress every 7 days. No black boxes."
+        },
+        "step4": {
+          "name": "Launch & Support",
+          "description": "We submit to App Store/Google Play. Post-launch bug fixes included for 30 days."
+        }
+      },
+      "processCta": "Let's talk",
+      "faq": {
+        "title": "Questions We Get Asked",
+        "q1": {
+          "question": "How long does an MVP take?",
+          "answer": "Most MVPs ship in 6-8 weeks. Complex apps take 10-14 weeks."
+        },
+        "q2": {
+          "question": "What if I don't have a technical background?",
+          "answer": "Perfect. Most of our clients don't. We translate your vision into specs."
+        },
+        "q3": {
+          "question": "Do you offer maintenance after launch?",
+          "answer": "Yes. We offer monthly retainer plans or ad-hoc support."
+        },
+        "q4": {
+          "question": "What's included in the $2,000 MVP?",
+          "answer": "Core user flows, one platform (iOS or Android), Firebase backend, App Store submission."
+        },
+        "q5": {
+          "question": "Can I see your previous work?",
+          "answer": "Yes — scroll up. All apps are live and downloadable."
+        }
       }
     },
     "web": {
       "number": "02.",
-      "title": "Web",
-      "tagline": "Modern web applications and landing pages that convert visitors into customers.",
-      "description1": "We create stunning web experiences that drive results. From high-converting landing pages to complex web applications, we build solutions that look great and perform even better.",
-      "description2": "Using the latest technologies like Next.js, React, and Tailwind CSS, we deliver fast, SEO-friendly websites that scale with your business.",
-      "ourWork": "Our Work",
-      "pricing": {
-        "landingPage": {
-          "name": "Landing Page",
-          "note": "Single page, conversion focused",
-          "price": "$800"
+      "eyebrow": "FOR STARTUPS & GROWING BUSINESSES",
+      "title": "Websites That Actually Convert.",
+      "titleLine2": "Delivered in 2 Weeks.",
+      "tagline": "We design and build high-performance landing pages and websites using Next.js — fast, SEO-ready, and built to turn visitors into customers. No templates. No guesswork.",
+      "proofLine": "15+ websites launched for startups, SaaS, and service businesses.",
+      "heroCta": "Get Your Free Website Audit →",
+      "whyFounders": "Why Businesses Choose Us",
+      "benefits": {
+        "conversionFocused": {
+          "title": "Conversion-focused design",
+          "description": "Every element has a job: get the click."
         },
-        "website": {
-          "name": "Website",
-          "note": "Multi-page, custom design",
-          "price": "$1,500"
+        "nextjs": {
+          "title": "Built on Next.js",
+          "description": "Blazing fast, SEO-optimized, scales effortlessly."
+        },
+        "fastDelivery": {
+          "title": "2-week delivery",
+          "description": "Landing pages in 5–7 days. Full sites in 10–14 days."
+        },
+        "support": {
+          "title": "30-day support included",
+          "description": "Bugs, tweaks, and questions covered."
+        }
+      },
+      "seeOurWork": "See Our Works ↓",
+      "ourWork": "Our Work",
+      "pricingTitle": "Transparent Pricing. No Surprises.",
+      "pricingCta": "Let's talk",
+      "pricingNote": "All projects include 30 days of post-launch support. Payment plans available.",
+      "pricing": {
+        "launchPage": {
+          "name": "Launch Page",
+          "note": "1 conversion-focused landing page, mobile responsive, SEO basics, 5–7 days",
+          "price": "$700"
+        },
+        "businessWebsite": {
+          "name": "Business Website",
+          "note": "3–5 page site, custom design, CMS, SEO setup, 10–14 days",
+          "price": "$1,200"
         },
         "webApp": {
           "name": "Web Application",
-          "note": "Full-stack, complex features"
+          "note": "Full-stack app, auth, database, API integrations, 3–6 weeks",
+          "price": "Custom"
+        }
+      },
+      "portfolio": {
+        "simnetiq": {
+          "name": "Simnetiq",
+          "description": "E-commerce landing page for global eSIM brand. 4.2% conversion rate. Launched in 6 days."
+        },
+        "vitrix": {
+          "name": "Vitrix",
+          "description": "Marketing website for fitness app. Custom animations, mobile-first. 12k visitors in first month."
+        },
+        "holylabs": {
+          "name": "HolyLabs",
+          "description": "Agency website with multi-language support. Built in Next.js. SEO-optimized."
+        }
+      },
+      "links": {
+        "viewSite": "View Site →"
+      },
+      "process": {
+        "title": "How It Works",
+        "step1": {
+          "name": "Free Strategy Call (15 min)",
+          "description": "We learn your goals, review your current site (if any), and see if we're a fit."
+        },
+        "step2": {
+          "name": "Proposal & Wireframes (48 hrs)",
+          "description": "You get a clear scope, fixed price, and rough wireframes before you commit."
+        },
+        "step3": {
+          "name": "Design & Build (1–2 weeks)",
+          "description": "We share progress every 3–4 days. You give feedback. We iterate fast."
+        },
+        "step4": {
+          "name": "Launch & Support",
+          "description": "We handle deployment, test everything, and stay available for 30 days post-launch."
+        }
+      },
+      "processCta": "Let's talk",
+      "faq": {
+        "title": "Common Questions",
+        "q1": {
+          "question": "How long does a landing page take?",
+          "answer": "Most landing pages launch in 5–7 business days. Full websites take 10–14 days."
+        },
+        "q2": {
+          "question": "Do you work with Webflow/WordPress?",
+          "answer": "We specialize in Next.js and React for performance. We can work with Webflow if needed."
+        },
+        "q3": {
+          "question": "What if I need changes after launch?",
+          "answer": "All projects include 30 days of free support. After that, we offer monthly maintenance plans."
+        },
+        "q4": {
+          "question": "Can you redesign my existing site?",
+          "answer": "Yes. We'll audit your current site and propose a redesign plan on our strategy call."
+        },
+        "q5": {
+          "question": "What do I need to provide?",
+          "answer": "Your brand assets (logo, colors, fonts) and content (copy, images). We can help with copy for an additional fee."
         }
       }
     },
     "automations": {
       "number": "03.",
-      "title": "Automations",
-      "tagline": "Streamline your workflows and eliminate repetitive tasks with intelligent automation.",
-      "description1": "We automate your business processes to save time and reduce errors. From simple task automation to complex multi-system integrations, we build workflows that work 24/7.",
-      "description2": "Using platforms like n8n and Make, we connect your tools and create seamless automations that scale with your business needs.",
-      "ourAutomations": "Our Automations",
+      "eyebrow": "STOP DOING MANUALLY WHAT SOFTWARE CAN DO FOR YOU",
+      "title": "Automate the Busywork.",
+      "titleLine2": "Get 10+ Hours Back.",
+      "tagline": "We build custom automations that connect your tools, eliminate repetitive tasks, and run your operations 24/7 — so you can focus on growth, not grunt work.",
+      "proofLine": "50+ workflows built for startups, agencies, and e-commerce brands.",
+      "heroCta": "Get Your Free Automation Audit →",
+      "whyFounders": "Why Businesses Hire Us",
+      "benefits": {
+        "connectTools": {
+          "title": "Connect any tools",
+          "description": "CRM, email, Slack, spreadsheets, payments — 500+ integrations."
+        },
+        "eliminateManual": {
+          "title": "Eliminate manual work",
+          "description": "Lead routing, data sync, reporting, follow-ups — all automated."
+        },
+        "builtToLast": {
+          "title": "Built to last",
+          "description": "n8n & Make.com for flexibility, speed, and zero lock-in."
+        },
+        "support": {
+          "title": "Ongoing support",
+          "description": "If something breaks, we fix it. 30-day support included."
+        }
+      },
+      "seeOurWork": "See Automation Examples ↓",
+      "ourWork": "What We Automate",
+      "pricingTitle": "Transparent Pricing. Clear ROI.",
+      "pricingCta": "Let's talk",
+      "pricingNote": "A $1,500 automation saving 10 hrs/week = $26,000/year saved. Pays for itself in 3 weeks.",
       "pricing": {
-        "simpleAutomation": {
-          "name": "Simple Automation",
-          "note": "Single workflow, basic triggers",
-          "price": "$300"
+        "starterWorkflow": {
+          "name": "Starter Workflow",
+          "note": "1 automation (up to 5 steps), 2 tool connections, documentation, 14-day support",
+          "price": "$500 – $800"
         },
-        "complexAutomation": {
-          "name": "Complex Automation",
-          "note": "Multi-system, advanced logic",
-          "price": "$800"
+        "growthSystem": {
+          "name": "Growth System",
+          "note": "3–5 connected automations, multi-tool integration, error handling, 30-day support",
+          "price": "$1,500 – $3,000"
         },
-        "enterpriseAutomation": {
-          "name": "Enterprise Automation",
-          "note": "Custom solutions, full support"
+        "operationsOverhaul": {
+          "name": "Full Operations Overhaul",
+          "note": "Complete workflow audit, 5+ automations, priority support, training",
+          "price": "From $5,000"
+        }
+      },
+      "useCases": {
+        "leadFollowup": {
+          "process": "Lead follow-up",
+          "before": "Manual emails, hours later",
+          "after": "Instant personalized email + Slack alert"
+        },
+        "crmUpdates": {
+          "process": "CRM updates",
+          "before": "Copy-paste from forms",
+          "after": "Auto-created contacts with all data synced"
+        },
+        "invoiceCreation": {
+          "process": "Invoice creation",
+          "before": "Manual entry, 20 min each",
+          "after": "Auto-generated from closed deals"
+        },
+        "reporting": {
+          "process": "Reporting",
+          "before": "Weekly spreadsheet nightmare",
+          "after": "Daily dashboard updates, zero effort"
+        },
+        "clientOnboarding": {
+          "process": "Client onboarding",
+          "before": "12 manual steps, things get missed",
+          "after": "Automated checklist, emails, folder creation"
+        }
+      },
+      "results": {
+        "title": "Real Automation Results",
+        "ecommerce": {
+          "name": "E-commerce Brand",
+          "description": "Automated order-to-fulfillment pipeline. 15 hours/week saved, zero fulfillment errors."
+        },
+        "agency": {
+          "name": "Marketing Agency",
+          "description": "Automated client reporting + lead routing. 8 hours/week saved per team member."
+        },
+        "saas": {
+          "name": "SaaS Startup",
+          "description": "Automated user onboarding + trial nurture. 2x trial-to-paid conversion."
+        }
+      },
+      "links": {
+        "viewDetails": "View Details →"
+      },
+      "process": {
+        "title": "How It Works",
+        "step1": {
+          "name": "Free Automation Audit (30 min)",
+          "description": "We map your current workflows and identify the biggest time leaks."
+        },
+        "step2": {
+          "name": "Custom Proposal (48 hrs)",
+          "description": "Clear scope: which automations, expected time savings, fixed price."
+        },
+        "step3": {
+          "name": "Build & Test (1–2 weeks)",
+          "description": "We build your workflows, test thoroughly, and document everything."
+        },
+        "step4": {
+          "name": "Deploy & Support (30 days)",
+          "description": "We launch, train your team, monitor for issues, and optimize."
+        }
+      },
+      "processCta": "Let's talk",
+      "faq": {
+        "title": "Common Questions",
+        "q1": {
+          "question": "What tools can you connect?",
+          "answer": "Almost anything — CRMs (HubSpot, Salesforce), email (Gmail, Mailchimp), Slack, Notion, Google Sheets, Airtable, Stripe, Shopify, Calendly, and 500+ more via APIs."
+        },
+        "q2": {
+          "question": "How is this different from Zapier?",
+          "answer": "Zapier is great for simple tasks. We use n8n and Make.com for complex, multi-step workflows with better logic, error handling, and no per-task fees."
+        },
+        "q3": {
+          "question": "What if my automation breaks?",
+          "answer": "All projects include 14–30 days of support. We also offer monthly maintenance retainers for ongoing monitoring."
+        },
+        "q4": {
+          "question": "How long does it take?",
+          "answer": "Simple workflows: 3–5 days. Complex systems: 1–2 weeks. We'll give you a timeline on the audit call."
+        },
+        "q5": {
+          "question": "Do I own the automation?",
+          "answer": "Yes. We build on n8n (self-hosted) or Make.com (your account). You have full ownership and access."
         }
       }
     },
     "marketing": {
       "number": "04.",
-      "title": "Ads & Marketing",
-      "tagline": "Strategic marketing campaigns that reach the right audience and drive real results.",
-      "description1": "We create and manage marketing campaigns that deliver measurable results. From social media ads to search engine marketing, we help you reach your target audience effectively.",
-      "description2": "Our data-driven approach ensures every dollar spent contributes to your growth goals.",
-      "ourCampaigns": "Our Campaigns",
+      "title": "Facebook Ads That",
+      "titleLine2": "Actually Make You Money.",
+      "eyebrow": "FOR E-COMMERCE, LOCAL BUSINESSES & COURSE CREATORS",
+      "tagline": "We manage Facebook & Instagram ad campaigns for businesses that want real revenue — not vanity metrics. Strategy, creative, and optimization — all handled.",
+      "proofLine": "Currently managing $50K+/month in client ad spend with avg. 3.2x ROAS",
+      "whyBusinesses": "Why Businesses Switch to Holylabs",
+      "seeResults": "See Results →",
+      "benefits": {
+        "fullFunnel": {
+          "title": "Full-Funnel Strategy",
+          "description": "We don't just run ads — we build systems. Cold traffic, retargeting, and conversions."
+        },
+        "creative": {
+          "title": "Creative That Converts",
+          "description": "We write copy and design ads based on what's working now — not templates."
+        },
+        "transparent": {
+          "title": "Transparent Reporting",
+          "description": "Weekly updates. Real numbers. No agency jargon."
+        },
+        "yourAccount": {
+          "title": "Your Account, Your Data",
+          "description": "You own everything. We just make it work."
+        }
+      },
+      "results": {
+        "title": "Results We've Delivered",
+        "ecommerce": {
+          "name": "E-commerce Brand",
+          "stat": "4.1x ROAS",
+          "description": "Scaled a jewelry brand from $3K to $18K/month in revenue using Meta Ads and dynamic retargeting."
+        },
+        "dental": {
+          "name": "Local Dental Practice",
+          "stat": "47 bookings/mo",
+          "description": "Generated consistent new patient bookings through Facebook lead forms and automated follow-up."
+        },
+        "course": {
+          "name": "Online Course Creator",
+          "stat": "312 sales",
+          "description": "Launched a course campaign that generated $28K in sales over 14 days with $4K ad spend."
+        }
+      },
+      "whatsIncluded": "What's Included",
+      "services": {
+        "adStrategy": {
+          "title": "Ad Strategy & Funnel Design",
+          "description": "We map your customer journey and build a campaign structure that guides cold traffic to conversion."
+        },
+        "creatives": {
+          "title": "Ad Creatives & Copywriting",
+          "description": "We create scroll-stopping visuals and persuasive copy — designed to perform, not just look pretty."
+        },
+        "management": {
+          "title": "Campaign Management",
+          "description": "Daily monitoring, A/B testing, audience refinement, and scaling what works."
+        },
+        "tracking": {
+          "title": "Tracking & Analytics",
+          "description": "Pixel setup, conversion tracking, and weekly performance reports you'll actually understand."
+        }
+      },
+      "pricingTitle": "Pricing",
       "pricing": {
-        "campaignSetup": {
+        "starter": {
           "name": "Campaign Setup",
-          "note": "Initial setup, targeting",
+          "note": "Up to 3 campaigns, 3 ad sets each, 3 ads per set",
           "price": "$500"
         },
-        "monthlyManagement": {
-          "name": "Monthly Management",
-          "note": "Ongoing optimization",
+        "growth": {
+          "name": "A/B Testing + Translations",
+          "note": "Full campaign setup with A/B testing, up to 3 languages",
           "price": "$800"
         },
-        "fullService": {
-          "name": "Full Service",
-          "note": "Strategy, creative, management"
+        "scale": {
+          "name": "Monthly Management",
+          "note": "Ongoing optimization, reporting, and scaling",
+          "price": "Custom"
+        }
+      },
+      "pricingNote": "Ad spend is billed directly to your account — we never mark it up.",
+      "pricingCta": "Let's talk",
+      "process": {
+        "title": "How It Works",
+        "step1": {
+          "name": "Audit & Strategy Call",
+          "description": "We review your current setup, define your goals, and map out the campaign structure."
+        },
+        "step2": {
+          "name": "Creative & Copy Development",
+          "description": "We create 3–5 ad variations based on what's working in your niche."
+        },
+        "step3": {
+          "name": "Campaign Launch",
+          "description": "We set up targeting, tracking, and launch your first campaigns."
+        },
+        "step4": {
+          "name": "Optimization & Scaling",
+          "description": "We kill what's not working, scale what is, and test new angles."
+        },
+        "step5": {
+          "name": "Weekly Reporting",
+          "description": "You get a clear performance breakdown — no fluff, just results."
+        }
+      },
+      "processCta": "Let's talk",  
+      "faq": {
+        "title": "FAQ",
+        "q1": {
+          "question": "What platforms do you work with?",
+          "answer": "We specialize in Meta (Facebook + Instagram) ads. For Google, TikTok, or other platforms, we can refer you to trusted partners."
+        },
+        "q2": {
+          "question": "How much ad spend do I need?",
+          "answer": "We recommend starting with at least $1,000–$2,000/month in ad spend. Below that, it's hard to gather enough data to optimize."
+        },
+        "q3": {
+          "question": "How soon will I see results?",
+          "answer": "Most campaigns start generating leads or sales within the first 1–2 weeks. Real optimization kicks in around week 3–4."
+        },
+        "q4": {
+          "question": "Do you create the ads or do I need to provide them?",
+          "answer": "We handle everything — copy, creative, and strategy. Just send us your brand assets and we'll take it from there."
+        },
+        "q5": {
+          "question": "Can I pause the service?",
+          "answer": "Yes. We work month-to-month with no long-term contracts. You can pause or cancel anytime."
+        },
+        "q6": {
+          "question": "What if it's not working?",
+          "answer": "We'll tell you. If the numbers don't make sense, we'll recommend pausing or pivoting — not burning your budget."
         }
       }
     }

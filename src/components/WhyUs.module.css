@@ -73,6 +73,19 @@
     z-index: 1;
 }
 
+.pillarTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.pillarDesc {
+    font-size: 1.25rem;
+    color: #999;
+    line-height: 1.4;
+}
+
 .statNumber {
     font-size: 8rem;
     font-weight: 800;
@@ -128,6 +141,14 @@
     .rightCol {
         min-width: 100%;
         gap: 2rem;
+    }
+
+    .pillarTitle {
+        font-size: 1.75rem;
+    }
+
+    .pillarDesc {
+        font-size: 1rem;
     }
 
     .statNumber {

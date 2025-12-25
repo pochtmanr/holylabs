@@ -14,7 +14,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     overflow: hidden;
 }
 
@@ -39,16 +39,50 @@
 }
 
 .heroTitle {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3.5rem, 10vw, 7.5rem);
     font-weight: 700;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
 .heroTagline {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     opacity: 0.9;
-    max-width: 600px;
+    max-width: 700px;
+}
+
+.heroTextBelow {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.heroSubheader {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--foreground);
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+.proofLine {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.proofCheck {
+    color: var(--accent);
+    font-weight: 600;
 }
 
 .contentSection {
@@ -255,6 +289,211 @@
     line-height: 1.6;
 }
 
+/* Hero CTA Button */
+.heroCtaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.heroCtaButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Benefits Section */
+.benefitsSection {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+.benefitsIntro {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+}
+
+.benefitsCredibility {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.benefitsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.benefitCheck {
+    color: var(--accent);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.benefitContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitTitle {
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.25rem;
+}
+
+.benefitDescription {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.seeWorkLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+.seeWorkLink:hover {
+    opacity: 0.7;
+}
+
+/* Process Section */
+.processSection {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.processGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.processStep {
+    position: relative;
+}
+
+.processNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.processName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.processDescription {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faqSection {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.faqList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.faqItem {
+    background: var(--secondary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.faqQuestion {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.faqAnswer {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Pricing Enhancement */
+.pricingNote {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.pricingFooter {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.pricingFooterText {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.pricingCtaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.875rem 1.5rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pricingCtaButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
 .ctaSection {
     padding: 4rem 2rem;
     text-align: center;
@@ -311,25 +550,166 @@
     color: var(--foreground);
 }
 
+/* Use Cases Section */
+.useCasesSection {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.useCasesTable {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--secondary);
+}
+
+.useCasesHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--foreground);
+    color: var(--background);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.useCaseRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.useCaseRow:last-child {
+    border-bottom: none;
+}
+
+.useCaseProcess {
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.useCaseBefore {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.useCaseAfter {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Results Section */
+.resultsSection {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.resultItem {
+    background: var(--secondary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.resultName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.resultStat {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.resultDesc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Services/What's Included Section */
+.servicesSection {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.serviceItem {
+    background: var(--secondary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.serviceName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.serviceDesc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .pageContainer {
         padding: 0 1rem;
     }
 
     .heroSection {
-        margin-bottom: 3rem;
-        height: 50vh;
+        margin-bottom: 0;
+        height: auto;
         min-height: 300px;
         padding: 1.5rem;
         align-items: flex-end;
     }
 
     .heroTitle {
-        font-size: clamp(2rem, 10vw, 3rem);
+        font-size: clamp(2.25rem, 10vw, 3rem);
     }
 
     .heroTagline {
+        font-size: 1.15rem;
+    }
+
+    .heroTextBelow {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .heroSubheader {
         font-size: 1rem;
+    }
+
+    .proofLine {
+        font-size: 0.85rem;
+    }
+
+    .heroCtaButton {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
     }
 
     .contentSection {
@@ -345,6 +725,47 @@
         padding-inline-end: 0;
     }
 
+    .benefitsList {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .benefitsIntro {
+        font-size: 1.1rem;
+    }
+
+    .benefitsCredibility {
+        font-size: 1rem;
+    }
+
+    .processGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .processStep {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .processNumber {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .processContent {
+        flex: 1;
+    }
+
+    .faqItem {
+        padding: 1.25rem;
+    }
+
+    .faqQuestion {
+        font-size: 1rem;
+    }
+
     .pricingBlock {
         padding: 1.5rem;
     }
@@ -357,5 +778,48 @@
     .ctaArrowCircle {
         width: 2rem;
         height: 2rem;
+    }
+
+    .useCasesHeader {
+        display: none;
+    }
+
+    .useCaseRow {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1.25rem;
+    }
+
+    .useCaseProcess {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .useCaseBefore::before {
+        content: "Before: ";
+        font-weight: 500;
+    }
+
+    .useCaseAfter::before {
+        content: "After: ";
+        font-weight: 500;
+    }
+
+    .resultsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .resultItem {
+        padding: 1.25rem;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .serviceItem {
+        padding: 1.25rem;
     }
 }

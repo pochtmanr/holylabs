@@ -203,9 +203,18 @@ export default function WhyUs() {
 
                     <div className={styles.rightCol} ref={cardsRef}>
                         <div className={styles.card}>
-                            <p className="medium-text" style={{ fontSize: '1.5rem', lineHeight: '1.4' }}>
-                                {t('description')}
-                            </p>
+                            <div className={styles.pillarTitle}>{t('pillars.speed.title')}</div>
+                            <p className={styles.pillarDesc}>{t('pillars.speed.description')}</p>
+                        </div>
+
+                        <div className={styles.card}>
+                            <div className={styles.pillarTitle}>{t('pillars.ownership.title')}</div>
+                            <p className={styles.pillarDesc}>{t('pillars.ownership.description')}</p>
+                        </div>
+
+                        <div className={styles.card}>
+                            <div className={styles.pillarTitle}>{t('pillars.clarity.title')}</div>
+                            <p className={styles.pillarDesc}>{t('pillars.clarity.description')}</p>
                         </div>
 
                         <div className={styles.card}>
