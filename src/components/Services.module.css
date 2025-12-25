@@ -65,14 +65,14 @@
 }
 
 .number {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: var(--text-muted);
     margin-bottom: 0.5rem;
     display: block;
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     font-weight: 700;
 }
 

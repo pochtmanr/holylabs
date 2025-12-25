@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Assistant } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -7,9 +7,10 @@ import { locales, localeDirection, type Locale } from '@/i18n/config';
 import Navbar from "@/components/Navbar";
 import "../globals.css";
 
-const nunitoSans = Nunito_Sans({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-nunito-sans",
+const assistant = Assistant({
+  subsets: ["latin", "latin-ext", "hebrew"],
+  variable: "--font-assistant",
+  display: "swap",
 });
 
 export function generateStaticParams() {
@@ -97,6 +98,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction}>
       <head>
+        <meta name="google-site-verification" content="ZU6_nbR8mcUmFepQbFaDzUTlv_z0az-ITgWVbjAgG5E" />
         <script dangerouslySetInnerHTML={{
           __html: `
             if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
@@ -132,7 +134,7 @@ export default async function LocaleLayout({
         <link rel="alternate" hrefLang="ru" href="/ru" />
         <link rel="alternate" hrefLang="x-default" href="/en" />
       </head>
-      <body className={`${nunitoSans.variable} font-sans antialiased`}>
+      <body className={`${assistant.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
